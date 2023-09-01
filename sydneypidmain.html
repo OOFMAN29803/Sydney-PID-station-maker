@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sydney PID</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
+.PID {
+width: 500px;
+height: 700px;
+border: 2px solid;
+margin-left: 50px;
+margin-top: 20px;
+border-radius: 10px;
+
+}
+
+.NextService {
+width: 500px;
+height: 60px;
+border-radius: 7px;
+background-color: #f47913;
+font-family: 'Public Sans', sans-serif;
+color: white;
+font-size: 30px;
+margin-top: -30px;
+
+}
+.pnextservice {
+margin-left: 10px;
+}
+
+.destinationp {
+font-family: 'Public Sans', sans-serif;
+font-size: 50px;
+margin-left: 85px;
+margin-top: -5px;
+margin-top: 15px;
+word-wrap: break-word;
+display: flex;
+flex-direction: column-reverse;
+z-index: 2;
+}
+
+.inputstation {
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+position: relative;
+z-index: 2;
+position: fixed;
+left: 50%;
+top: 31.5%;
+}
+
+.station1 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll1 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 5; /* Unique z-index value */
+}
+
+@keyframes stationroll1 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -320px;
+  }
+}
+
+.station2 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll2 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 4; /* Unique z-index value */
+}
+
+@keyframes stationroll2 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -300px;
+  }
+}
+
+.station3 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll3 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 3; /* Unique z-index value */
+}
+
+@keyframes stationroll3 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -280px;
+  }
+}
+
+.station4 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll4 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 2; /* Unique z-index value */
+}
+
+@keyframes stationroll4 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -250px;
+  }
+}
+
+.station5 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll5 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 1; /* Unique z-index value */
+}
+
+@keyframes stationroll5 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -170px;
+  }
+}
+
+.nextservice {
+position: relative;
+width: 497px;
+height: 136px;
+border-radius: 7px;
+background-color: white;
+z-index: 6;
+}
+
+.line {
+width: 450px;
+height: 0px;
+border: 3px solid;
+margin-left: 20px;
+}
+.dontboard {
+font-size: 30px;
+margin-left: 20px;
+font-family: 'Public Sans', sans-serif;
+
+}
+
+.timecoming {
+font-size: 40px;
+margin-top: -190px;
+margin-left: 320px;
+z-index: 9;
+font-family: 'Public Sans', sans-serif;
+}
+.stationchange1 {
+position: fixed;
+left: 50%;
+top: 36%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange2 {
+position: fixed;
+left: 50%;
+top: 40%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange3 {
+position: fixed;
+left: 50%;
+top: 44%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange4 {
+position: fixed;
+left: 50%;
+top: 48%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange5 {
+position: fixed;
+left: 50%;
+top: 52%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.buttonstation1 {
+position: fixed;
+left: 64%;
+top: 36%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation2 {
+position: fixed;
+left: 64%;
+top: 40%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation3 {
+position: fixed;
+left: 64%;
+top: 44%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation4 {
+position: fixed;
+left: 64%;
+top: 48%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation5 {
+position: fixed;
+left: 64%;
+top: 52%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.divbutton {
+width: 60px;
+height: 60px;
+border: 1px solid;
+border-radius: 10px;
+font-family: 'Public Sans', sans-serif;
+}
+.versioncontainer {
+width: 500px;
+height: 400px;
+position: fixed;
+left: 20%
+top: 30%
+border: 1px solid;
+display: none;
+font-family: 'Public Sans', sans-serif;
+
+}
+.closeverhis {
+margin-top: 20px;
+margin-left: 20px;
+width: 20px;
+height: 20px;
+border: 1px solid;
+}
+
+.dvabutton {
+width: 90px;
+height: 40px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+left: 62%;
+top: 57%;
+}
+
+.destination {
+position: fixed;
+left: 64%;
+top: 31.5%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.dvachimes {
+width: 90px;
+height: 40px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+left: 50%;
+top: 57%;
+}
+.img {
+position: fixed;
+top: 10.5%;
+width: 70px;
+height: 70px;
+background-size: contain; 
+background-repeat: no-repeat;
+border: none;
+background-image: url('Intercity.png'); 
+}
+.tbutton {
+width: 90px;
+height: 40px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+left: 64%;
+top: 26%;
+}
+
+.tinput1 {
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+position: fixed;
+left: 50%;
+top: 26.8%;
+}
+.verhis {
+font-size: 10px;
+font-family: 'Public Sans', sans-serif;
+position: fixed;
+bottom: 1%;
+left: 3%;
+color: grey;
+}
+</style>
+</head>
+<body> 
+<button class="dvabutton" onclick="dvaplay()">DVA play</button>
+<div class="PID" id="pid">
+<div class="NextService" >
+<p id="nextservicep" class="pnextservice">Next Service</p>
+</div><img id="timg" class="img"></img><p id="output" class="destinationp">Central</p><p id="station1" class="station1">Blacktown</p>
+<p id="station2" class="station2">Seven Hills</p><p id="station3" class="station3">Lidcombe</p><p id="station4" class="station4">Strathfield</p><p id="station5" class="station5">Central</p><div class="nextservice"><div class="line"></div><p id="dontboard" class="dontboard">Do Not Board:‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 19 min</p></div><p class="timecoming" id="timecoming">12 Mins</p></div>
+<input class="tinput1" maxlength="9" placeholder="Enter T 1-9" id="tinput1"></input><button class="tbutton" onclick="tinput()">Change Line</button>
+<input id="input" placeholder="enter train destination" class="inputstation" maxlength="20"></input>
+<button class="destination" onclick="destinationchooser()">Create</button>
+<input  class="stationchange1" maxlength="20" id="stationchange1" placeholder="Change Station 1's name"></input>
+<button class="buttonstation1" onclick="station1()">Change</button>
+<input class="stationchange2" maxlength="20" id="stationchange2" placeholder="Change Station 2's name"></input>
+<button class="buttonstation2" onclick="station2()">Change</button>
+<input class="stationchange3" maxlength="20" id="stationchange3" placeholder="Change Station 3's name"></input>
+<button class="buttonstation3" onclick="station3()">Change</button>
+<input class="stationchange4" maxlength="20" id="stationchange4" placeholder="Change Station 4's name"></input>
+<button class="buttonstation4" onclick="station4()">Change</button>
+<input class="stationchange5" maxlength="20" id="stationchange5" placeholder="Change Station 5's name"></input>
+<button class="buttonstation5" onclick="station5()">Change</button>
+<button class="dvachimes" onclick="dvachimes()">Chimes Play</button>
+<p class="verhis">
+V 0.2                        
+Date Modified: 1/9/23
+Added the T1-9 images (files). Major design changes. Made 2 buttons. One does the chimes, one does an announcement for the default (It uses the DVA program its not mine whatsoever https://www.railpage.com.au/f-t11377028.htm download there). This is an early build. There is a bug where there is no cooldown for the chimes. so it creates an earrape if pressed so much. I am planning to make an SP6 and express and other things like the original PID soon. the animations will be heavily improved overtime. Next Service will also be improved. also new PID in planning. I was going to make the do not board timer change but it didnt work and it broke everything :/ 
+
+</p>
+
+<script>
+var dva = 0
+var time1 = 12
+var time2 = 19
+function time() {
+var nextservicep = document.getElementById("nextservicep")
+nextservicep.textContent = "Next Service: " + "‎‎Time Now: " + new Date().toLocaleTimeString();
+}
+
+setInterval(time, 1000)
+
+
+function tinput() {
+
+    var timg = document.getElementById("timg");
+    var tinput = document.getElementById("tinput1").value;
+
+   
+timg.style.backgroundImage = 'url(' + tinput + '.png)';
+}
+
+function imgcover() {
+
+var timg = document.getElementById("timg");
+if (tinput == "") {
+
+timg.style.display = "none"
+} else {
+
+}
+}
+setInterval(imgcover(), 10)
+
+function timearrival() {
+time1 = time1 - 1
+var minp = document.getElementById("timecoming")
+minp.textContent = time1 + " Mins"
+
+if (time1 < 1) {
+minp.textContent = "Now"
+minp.style.marginLeft = "350px"
+}
+}
+setInterval(timearrival, 60000)
+
+function vercontaineropen() {
+var versioncontainer = document.getElementById("versioncontainer")
+versioncontainer.style.display = "block"
+console.log("Version container opened");
+}
+
+
+setInterval(dontboard, 1000)
+
+function dvaplay() {
+var audio = new Audio("sydneydvabasic.mp3");
+audio.play();
+}
+
+function dvachimes() {
+var audio = new Audio("chimes.mp3");
+audio.play();
+}
+
+
+function vercontainerclose() {
+var versioncontainer = document.getElementById("versioncontainer")
+versioncontainer.style.display = "none"
+}
+function station1() {
+var station1input = document.getElementById("stationchange1").value;
+  var station1p= document.getElementById("station1");
+    station1p.textContent = station1input;
+}
+
+function station2() {
+var station2input = document.getElementById("stationchange2").value;
+  var station2p= document.getElementById("station2");
+    station2p.textContent = station2input;
+}
+function station3() {
+var station3input = document.getElementById("stationchange3").value;
+  var station3p= document.getElementById("station3");
+    station3p.textContent = station3input;
+}
+
+function station4() {
+var station4input = document.getElementById("stationchange4").value;
+  var station4p= document.getElementById("station4");
+    station4p.textContent = station4input;
+}
+
+function station5() {
+var station5input = document.getElementById("stationchange5").value;
+  var station5p= document.getElementById("station5");
+if (station5p.length > 13) {
+    station5p.textContent = station5p.substring(0, 13) + "...";
+  } else {
+    station5p.textContent = station5input;
+  }    
+}
+
+
+function destinationchooser() {
+  var destination = document.getElementById("input").value;
+  var output = document.getElementById("output");
+
+  if (destination.length > 12) {
+    output.textContent = destination.substring(0, 12) + "...";
+  } else {
+    output.textContent = destination;
+  }
+}
+
+
+</script>
+</body>
+</html>
