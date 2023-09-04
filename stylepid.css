@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
+.PID {
+width: 500px;
+height: 700px;
+border: 2px solid;
+margin-left: 50px;
+margin-top: 20px;
+border-radius: 10px;
+overflow: hidden;
+
+}
+
+.NextService {
+width: 500px;
+height: 60px;
+border-radius: 7px;
+background-color: #f47913;
+font-family: 'Public Sans', sans-serif;
+color: white;
+font-size: 30px;
+margin-top: -30px;
+
+}
+.pnextservice {
+margin-left: 10px;
+}
+
+.destinationp {
+font-family: 'Public Sans', sans-serif;
+font-size: 50px;
+margin-left: 85px;
+margin-top: -5px;
+margin-top: 15px;
+word-wrap: break-word;
+display: flex;
+flex-direction: column-reverse;
+z-index: 2;
+}
+
+.inputstation {
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+position: relative;
+z-index: 2;
+position: fixed;
+left: 50%;
+top: 31.5%;
+}
+
+.station1 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll1 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 5; /* Unique z-index value */
+}
+
+@keyframes stationroll1 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -320px;
+  }
+}
+
+.station2 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll2 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 4; /* Unique z-index value */
+}
+
+@keyframes stationroll2 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -300px;
+  }
+}
+
+.station3 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll3 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 3; /* Unique z-index value */
+}
+
+@keyframes stationroll3 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -280px;
+  }
+}
+
+.station4 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll4 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 2; /* Unique z-index value */
+}
+
+@keyframes stationroll4 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -250px;
+  }
+}
+
+.station5 {
+  font-size: 35px;
+  font-family: 'Public Sans', sans-serif;
+  animation: stationroll5 13s linear infinite;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 15px;
+  z-index: 1; /* Unique z-index value */
+}
+
+@keyframes stationroll5 {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -170px;
+  }
+}
+
+.nextservice {
+position: relative;
+width: 497px;
+height: 114px;
+border-radius: 0px;
+background-color: white;
+z-index: 6;
+}
+
+.line {
+width: 450px;
+height: 0px;
+border: 3px solid;
+margin-left: 20px;
+}
+.dontboard {
+font-size: 30px;
+margin-left: 20px;
+font-family: 'Public Sans', sans-serif;
+
+}
+
+.timecoming {
+font-size: 40px;
+margin-top: -190px;
+margin-left: 320px;
+z-index: 9;
+font-family: 'Public Sans', sans-serif;
+}
+.stationchange1 {
+position: fixed;
+left: 50%;
+top: 36%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange2 {
+position: fixed;
+left: 50%;
+top: 40%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange3 {
+position: fixed;
+left: 50%;
+top: 44%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange4 {
+position: fixed;
+left: 50%;
+top: 48%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.stationchange5 {
+position: fixed;
+left: 50%;
+top: 52%;
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+}
+
+.buttonstation1 {
+position: fixed;
+left: 64%;
+top: 36%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation2 {
+position: fixed;
+left: 64%;
+top: 40%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation3 {
+position: fixed;
+left: 64%;
+top: 44%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation4 {
+position: fixed;
+left: 64%;
+top: 48%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.buttonstation5 {
+position: fixed;
+left: 64%;
+top: 52%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.divbutton {
+width: 60px;
+height: 60px;
+border: 1px solid;
+border-radius: 10px;
+font-family: 'Public Sans', sans-serif;
+}
+.versioncontainer {
+width: 500px;
+height: 400px;
+position: fixed;
+left: 20%
+top: 30%
+border: 1px solid;
+display: none;
+font-family: 'Public Sans', sans-serif;
+
+}
+.closeverhis {
+margin-top: 20px;
+margin-left: 20px;
+width: 20px;
+height: 20px;
+border: 1px solid;
+}
+
+.dvabutton {
+width: 90px;
+height: 40px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+left: 62%;
+top: 57%;
+}
+
+.destination {
+position: fixed;
+left: 64%;
+top: 31.5%;
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.dvachimes {
+width: 90px;
+height: 40px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+left: 50%;
+top: 57%;
+}
+.img {
+position: fixed;
+top: 10.5%;
+left: 4.5%;
+width: 70px;
+height: 70px;
+background-size: contain; 
+background-repeat: no-repeat;
+border: none;
+background-image: url('Intercity.png'); 
+}
+.tbutton {
+width: 90px;
+height: 40px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+left: 64%;
+top: 26%;
+}
+
+.tinput1 {
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+position: fixed;
+left: 50%;
+top: 26.8%;
+}
+.verhis {
+font-size: 10px;
+font-family: 'Public Sans', sans-serif;
+position: fixed;
+bottom: 1%;
+left: 3%;
+color: grey;
+}
+
+.updates {
+width: 90px;
+height: 40px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+top: 2%;
+right: 2%;
+}
+
+.top {
+border: 0px solid;
+width: 500px;
+height: 100px;
+background-color: white;
+}
+
+.topdiv {
+width: 500px;
+height: 130px;
+overflow: hidden;
+
+}
+
+.via {
+font-size: 25px;
+position: fixed;
+top: 16%;
+font-family: 'Public Sans', sans-serif;
+left: 10%;
+overflow: hidden;
+}
+
+.buttonvia1 {
+width: 90px;
+height: 30px;
+background-color: white;
+cursor: pointer;
+border-radius: 10px;
+position: fixed;
+left: 64%;
+top: 21.5%;
+}
+
+.viainput {
+width: 180px;
+height: 20px;
+border: 1px solid;
+border-radius: 15px;
+font-size: 25px;
+font-family: 'Public Sans', sans-serif;
+padding: 4px;
+position: fixed;
+left: 50%;
+top: 22%;
+word-wrap: break-word;
+display: flex;
+flex-direction: column-reverse;
+}
+
+.line2 {
+width: 450px;
+height: 0px;
+border: 3px solid;
+margin-left: 20px;
+margin-bottom: 60px;
+}
